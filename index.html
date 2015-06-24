@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="tftx">
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>腾飞通讯</title>
+
+    <script src="vendor/jquery/jquery.js" type="text/javascript"></script>
+
+    <link href="vendor/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="vendor/bootstrap-3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="vendor/angular/angular.js" type="text/javascript"></script>
+
+    <link href="assets/css/app.css" rel="stylesheet" >
+    <script src="app/app.module.js" type="text/javascript"></script>
+    <script src="app/controllers/main.controller.js" type="text/javascript"></script>
+
+    <link href="app/modules/home/css/home.css" rel="stylesheet" >
+    <script src="app/modules/home/home.module.js" type="text/javascript"></script>
+
+    <link href="app/modules/recruit/css/recruit.css" rel="stylesheet" >
+    <script src="app/modules/recruit/recruit.module.js" type="text/javascript"></script>
+
+    <link href="app/modules/fitting/css/fitting.css" rel="stylesheet" >
+    <script src="app/modules/fitting/fitting.module.js" type="text/javascript"></script>
+
+</head>
+<body ng-controller="MainController as tftx">
+<div id="header" ng-include="'app/views/navi.tpl.html'">
+</div>
+<div ng-include="tftx.main_template_url">
+</div>
+<div id="footer" class="label label-default">
+    <h3 class="title">腾飞通讯</h3>
+    <span class="address">山东聊城汽车总站对过，鸿发通讯城， 腾飞通讯</span>
+</div>
+</body>
+</html>
